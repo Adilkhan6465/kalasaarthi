@@ -1,0 +1,149 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Streamlit main container */
+.main .block-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+/* Section card look */
+section, .translations, .stMarkdown, .qr-box {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Upload styling */
+.stFileUpload {
+    margin-bottom: 20px;
+}
+
+/* Text areas */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+    resize: vertical;
+}
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Buttons */
+.stButton button {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+.stButton button:hover {
+    background: linear-gradient(135deg, #43a047, #388e3c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Dropdowns */
+.stSelectbox div {
+    border-radius: 8px !important;
+}
+
+/* QR image container */
+.qr-box {
+    text-align: center;
+}
+.qr-box img {
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    background: #fff;
+    max-width: 260px;
+}
+
+/* Translation & trend suggestion */
+.translations, .stMarkdown {
+    background-color: #fafafa;
+    border-left: 4px solid #4CAF50;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .main .block-container {
+        padding: 1rem;
+    }
+    textarea {
+        font-size: 14px;
+    }
+    .stButton button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+    .qr-box img {
+        max-width: 200px;
+    }
+}
+
+/* ---- Extra UI Polish ---- */
+
+/* Divider line */
+hr {
+    margin: 20px 0;
+    border: 0.5px solid #eaeaea;
+}
+
+/* Custom button colors */
+.stButton > button.generate-btn {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+.stButton > button.translate-btn {
+    background-color: #2196F3 !important;
+    color: white !important;
+}
+.stButton > button.download-btn {
+    background-color: #FF9800 !important;
+    color: white !important;
+}
+
+/* Trend suggestions box */
+.trend-box {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+}
+.trend-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+.trend-box li {
+    margin: 8px 0;
+    font-size: 15px;
+}

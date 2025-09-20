@@ -1,0 +1,10 @@
+streamlit
+google-generativeai
+google-cloud-speech
+google-cloud-vision
+google-cloud-translate
+pydub
+opencv-python
+Pillow
+qrcode
+deep-translator
